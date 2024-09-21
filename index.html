@@ -1,0 +1,247 @@
+<!--ToDo: Create a new website using HTML and Bootstrap.
+The website must include the following: -->
+<!--* At least 2 pages. -->
+<!--* A Bootstrap navbar, table, and form. -->
+<!--* Bootstrap grid used throughout to format elements -->
+<!--* Elements should stack vertically when the window is small -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Mireles">
+    <title>My Boostrap Project</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Jacksonville Jaguars</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Roster.html">Roster</a>
+              </li>
+              
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+        <!-- HERO -->
+        <div class="container">
+            <div class="jags-header text-center">
+            <img class="image-fluid"  src="Bootstrap Week 3 Images/2019_JAX.png" alt="Home of the Jacksonville Jaguars">
+        </div>
+    </div>
+
+        <!-- WELCOME -->
+         <h1 class="text-center p-3"> Home of the Jacksonville Jaguars</h1>
+         <p class="text-center fs-5">Est. 1995</p>
+         <p class="text-center fs-5">Everbank Field in Jacksonville, FL</p>
+
+        <!-- CARDS -->
+        <div class="container text-center">
+
+            <div class="row row-cols-1 row-cols-lg-3 g-5 m-3 pt-5">
+
+              <div class="col-sm">
+            
+                <div class="card h-100 shadow-lg">
+                    <img src="Bootstrap Week 3 Images/Jaguars NFL tickets 2024.jpg" class="card-img-top" alt="Buy Tickets for the Jaguars">
+                    <div class="card-body">
+                      <h5 class="card-title">Tickets</h5>
+                      <p class="card-text fs-5">Get your tickets today for the 2024 Jacksonville Jaguars Season</p>
+                      <a href="#" class="btn btn-primary">Buy Your Tickets</a>
+                    </div>
+                  </div>
+
+              </div>
+
+              <div class="col-sm">
+            
+                <div class="card h-100 shadow-lg">
+                    <img src="Bootstrap Week 3 Images/falcons-jaguars.jpg" class="card-img-top" alt="Schedule of the Jaguars">
+                    <div class="card-body">
+                      <h5 class="card-title">Schedule</h5>
+                      <p class="card-text fs-5">Find out when, where, and whom the Jaguars are playing!</p>
+                      <a href="#" class="btn btn-primary">2024 Schedule</a>
+                    </div>
+                  </div>
+
+              </div>
+
+              <div class="col-sm">
+
+                <div class="card h-100 shadow-lg">
+                    <img src="Bootstrap Week 3 Images/usa_today_21086356.0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">News</h5>
+                      <p class="card-text fs-5">Catch up on the latest news from the Jacksonville Jaguars</p>
+                      <a href="#" class="btn btn-primary color">Latest News</a>
+                    </div>
+                  </div>
+            
+              </div>
+            </div>
+          </div>
+        <!-- PICTURE DIV -->
+        <div class="container mt-5 mb-5 pt-5 pb-5 text-center">
+            <div class="m-3 p-5">
+            <div class="row gx-0 g-0">
+              <div class="col-sm-12 pb-3"><h5>Sponsors</h5></div>
+            </div>
+            <div class="row gx-0 g-0">
+              <div class="col-sm-8">
+                <img class="image-fluid" src="Bootstrap Week 3 Images/Ever-Bank-logo-59bbccab70d8405bab18cfc66bdb0af1.png" alt="Everbank Logo" width="400" height="200">
+              </div>
+              <div class="col-sm-4">
+                <img class="image-fluid" src="Bootstrap Week 3 Images/publix.png" alt="Publix logo" width="200" height="150">
+              </div>
+            </div>
+            <div class="row gx-0 g-0">
+                <div class="col-sm-4">
+                    <img class="image-fluid" src="Bootstrap Week 3 Images/farah.png" alt="Farah and Farah logo" width="200" height="100">
+                </div>
+                <div class="col-sm-8">
+                    <img class="image-fluid" src="Bootstrap Week 3 Images/coke-fl-logo-1.png" alt="Coca Cola logo" width="200" height="100">
+                </div>
+            </div>
+         </div> 
+          </div>
+        <!-- CONTACT FORM -->
+         <h2 class="text-center mt-5 pt-5">Contact Us</h2>
+         <h5 class="text-center mb-4">Get more information on tickets and more!</h5>
+          <div class="container">
+         <form class="row g-3 mb-5 ms-3 me-3 p-5">
+        <div class="form-styles">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">First Name</label>
+                  <input type="text" class="form-control" aria-label="First name" id="firtname">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" aria-label="Last name" id="firstname">
+                </div>
+            </div>
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6 container">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4 container">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+               <option selected>Choose...</option>
+               <option value="AL">Alabama</option>
+               <option value="AK">Alaska</option>
+               <option value="AZ">Arizona</option>
+               <option value="AR">Arkansas</option>
+               <option value="CA">California</option>
+               <option value="CO">Colorado</option>
+               <option value="CT">Connecticut</option>
+               <option value="DE">Delaware</option>
+               <option value="FL">Florida</option>
+               <option value="GA">Georgia</option>
+               <option value="HI">Hawaii</option>
+               <option value="ID">Idaho</option>
+               <option value="IL">Illinois</option>
+               <option value="IN">Indiana</option>
+               <option value="IA">Iowa</option>
+               <option value="KS">Kansas</option>
+               <option value="KY">Kentucky</option>
+               <option value="LA">Louisiana</option>
+               <option value="ME">Maine</option>
+               <option value="MD">Maryland</option>
+               <option value="MA">Massachusetts</option>
+               <option value="MI">Michigan</option>
+               <option value="MN">Minnesota</option>
+               <option value="MS">Mississippi</option>
+               <option value="MO">Missouri</option>
+               <option value="MT">Montana</option>
+               <option value="NE">Nebraska</option>
+               <option value="NV">Nevada</option>
+               <option value="NH">New Hampshire</option>
+               <option value="NJ">New Jersey</option>
+               <option value="NM">New Mexico</option>
+               <option value="NY">New York</option>
+               <option value="NC">North Carolina</option>
+               <option value="ND">North Dakota</option>
+               <option value="OH">Ohio</option>
+               <option value="OK">Oklahoma</option>
+               <option value="OR">Oregon</option>
+               <option value="PA">Pennsylvania</option>
+               <option value="RI">Rhode Island</option>
+               <option value="SC">South Carolina</option>
+               <option value="SD">South Dakota</option>
+               <option value="TN">Tennessee</option>
+               <option value="TX">Texas</option>
+               <option value="UT">Utah</option>
+               <option value="VT">Vermont</option>
+               <option value="VA">Virginia</option>
+               <option value="WA">Washington</option>
+               <option value="WV">West Virginia</option>
+               <option value="WI">Wisconsin</option>
+               <option value="WY">Wyoming</option>
+
+              </select>
+            </div>
+            <div class="col-md-4 container">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            
+            <div class="col-12 text-center p-3">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+    </div>
+        <!-- FOOTER -->
+        <footer class="pt-5 pb-5">
+         <div class="text-center p-5">
+            <h7>Jacksonville Jaguars ©2024</h7>
+         </div>
+        </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
